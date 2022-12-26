@@ -2,3 +2,5 @@
 ffmpeg -i movie1.mp4 -vb 1031k /output/movie1.mp4
 #指定時間までカットし、指定区間を出力する
 ffmpeg -ss [duration] -i input.mp4 -t [duration] -c copy output.mp4
+#指定時間までカットし、指定区間10sを出力する
+ffmpeg -ss 0 -i movie1.mp4 -t 10 -vb 1031k  /data/moviw2.mp4 
